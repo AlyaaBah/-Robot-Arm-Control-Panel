@@ -30,7 +30,7 @@ The interface was built as part of a modular control system, with support for fu
 ## Workflow Summary
 
 - User selects motor positions using sliders  
-- On form submission, values are sent to `save_pose.php` via POST  
+- On form submission, values are sent to file.php via POST  
 - Data is inserted into a table named `motors` with `motor1`, `motor2`, and `ID`  
 - Confirmation message displays motor values and link to return to interface  
 - Stored data can be extended to power physical servos or log user interactions  
@@ -69,12 +69,7 @@ Columns:
 - `motor1` — Integer value (0–180)  
 - `motor2` — Integer value (0–180)  
 
-## Repository Contents
 
-- `index.php` — Main control panel interface  
-- `save_pose.php` — Backend logic to insert poses into MySQL  
-- `db_connect.php` — MySQL connection using localhost, root user, no password  
-- `README.md` — Project documentation and usage notes
 
 ---
 
